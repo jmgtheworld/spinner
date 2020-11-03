@@ -1,11 +1,8 @@
 const spinner = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', 
 '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   '  ];
 
-for (element in spinner) {
-  let current = spinner[element];
+for (let element in spinner) {
   setTimeout(() => {
-    process.stdout.write(current);
+    process.stdout.write(spinner[element]);
   }, 100 + (element * 200) );
 }
-
-
